@@ -24,7 +24,7 @@ public class GamePlay : MonoBehaviour
 
     /*HUD*/
     public Text PlayerTurnText;
-    public GameObject check;
+    public Text check;
     public Slider localHealthbar;
     public Slider remoteHealthbar;
     public Slider localManaBar;
@@ -133,7 +133,7 @@ public class GamePlay : MonoBehaviour
             case GameState.AttackPhase:
                 {
                     Debug.Log("AttackPhase");
-                    OnBattlePhase();
+                    OnAttackPhase();
                     break;
                 }
             case GameState.WaitingOpponent:
@@ -170,6 +170,7 @@ public class GamePlay : MonoBehaviour
         Debug.Log("OnGameStart");
         if (NetworkClient.Instance.IsHost)
         {
+            Debug.Log("OnGameStart");
             SwitchTurn();
             gameState = GameState.TurnStarted;
         }
@@ -190,15 +191,16 @@ public class GamePlay : MonoBehaviour
         /*จ่ายคอส*/
         /*เช็คมานา*/
         gameState = GameState.AttackPhase;
-        check.SetActive(true);
-        showBtn("main");
+        //check.SetActive(true);
+        check.text = "summon phase";
+        //showBtn("main");
         /*GameFlow();*/
     }
 
-    public void OnBattlePhase()
+    public void OnAttackPhase()
     {
         gameState = GameState.EndPhase;
-        check.SetActive(true);
+        //check.SetActive(true);
         showBtn("battle");
         netCode.NotifyOtherPlayersGameStateChanged();
         GameFlow();

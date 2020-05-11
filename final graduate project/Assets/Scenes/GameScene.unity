@@ -1124,7 +1124,7 @@ MonoBehaviour:
     Hp: 1000
     mana: 5
   PlayerTurnText: {fileID: 1219029652}
-  check: {fileID: 390110765}
+  check: {fileID: 390110767}
   localHealthbar: {fileID: 1503625412}
   remoteHealthbar: {fileID: 1323697778}
   localManaBar: {fileID: 1886441339}
@@ -1246,7 +1246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &904369276
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1117539848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1953,7 +1953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1140975423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2694,7 +2694,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1596831666
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2813,7 +2813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1679045098
 RectTransform:
   m_ObjectHideFlags: 0
