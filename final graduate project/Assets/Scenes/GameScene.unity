@@ -1101,8 +1101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc9d249a688e5f648b38ad4fc7069194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localPlayer_name: {fileID: 0}
-  remotePlayer_name: {fileID: 0}
+  localPlayer_name: {fileID: 704859389}
+  remotePlayer_name: {fileID: 1219092597}
   localPlayer:
     PlayerId: 
     PlayerName: 
