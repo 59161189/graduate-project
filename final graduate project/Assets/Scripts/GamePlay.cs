@@ -25,17 +25,18 @@ public class GamePlay : MonoBehaviour
     /*HUD*/
     public Text PlayerTurnText;
     public Text check;
-    public Slider localHealthbar;
+    public HPBar localHealthbar;
     public Slider remoteHealthbar;
     public Slider localManaBar;
     public Slider remoteManaBar;
+
+    public Netcode netCode;
+
     public GameObject mainphaseBtnDis;
     public GameObject battphaseBtn;
     public GameObject battphaseBtnDis;
     public GameObject endphaseBtn;
     public GameObject endphaseBtnDis;
-
-    public Netcode netCode;
 
     RemoteEventAgent remoteEventAgent;
 
@@ -170,9 +171,9 @@ public class GamePlay : MonoBehaviour
         Debug.Log("OnGameStart");
         if (NetworkClient.Instance.IsHost)
         {
-            //SwitchTurn();
+            Debug.Log("OnGameStart");
+            SwitchTurn();
             gameState = GameState.TurnStarted;
-            Debug.Log("I am host and the turn started");
         }
         //GameFlow();
     }
@@ -180,7 +181,7 @@ public class GamePlay : MonoBehaviour
     // เริ่มเทิร์นผู้เล่น
     protected void OnTurnStarted()
     {
-        //netCode.NotifyOtherPlayersGameStateChanged();
+        netCode.NotifyOtherPlayersGameStateChanged();
         gameState = GameState.SummonPhase;
         //GameFlow();
     }
@@ -203,7 +204,7 @@ public class GamePlay : MonoBehaviour
         //check.SetActive(true);
         showBtn("battle");
         netCode.NotifyOtherPlayersGameStateChanged();
-        //GameFlow();
+        GameFlow();
     }
 
     public void OnWaitingOpponent()
@@ -218,10 +219,9 @@ public class GamePlay : MonoBehaviour
 
     public void OnEndPhase()
     {
-        hideAllButton();
         gameState = GameState.WaitingOpponent;
         netCode.NotifyOtherPlayersGameStateChanged();
-        //GameFlow();
+        GameFlow();
     }
 
     public void OnGameFinished()
@@ -231,7 +231,7 @@ public class GamePlay : MonoBehaviour
 
     public void dealDamageToLocalPlayer(int damage)
     {
-        localHealthbar.value -= damage;
+        localHealthbar.hp_decrease(damage);
     }
 
     public void dealDamageToRemotePlayer(int damage)
@@ -329,7 +329,7 @@ public class GamePlay : MonoBehaviour
     {
         netCode.NotifyOtherPlayerAttacked();
         if (NetworkClient.Instance.IsHost)
-            localHealthbar.value -= damage;
+            localHealthbar.hp_decrease(damage);
     }
 
     public void MessagePlayer()

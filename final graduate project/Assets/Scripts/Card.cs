@@ -9,13 +9,16 @@ public class Card : MonoBehaviour
 {
     [SerializeField]
     int atk, def;
-    string card_id;
+    int card_id;
 
     public Text cardName;
 
-    public void genId()
+    public int genId(GameObject card)
     {
-        if (string.IsNullOrEmpty(card_id))
+        this.card_id = card.GetInstanceID();
+        return this.card_id;
+
+        /*if (string.IsNullOrEmpty(card_id))
         {
             card_id = "JACK";
             cardName.text = card_id;
@@ -24,10 +27,10 @@ public class Card : MonoBehaviour
         {
             card_id = "xxxxxx";
             cardName.text = card_id;
-        }
+        }*/
     }
 
-    public string getId()
+    public int getId()
     {
         return card_id;
     }

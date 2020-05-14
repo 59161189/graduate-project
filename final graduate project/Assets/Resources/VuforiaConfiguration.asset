@@ -9,21 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 4bc5fd733b147194692297d23f623541, type: 3}
+  m_Script: {fileID: 0}
   m_Name: VuforiaConfiguration
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Vuforia.UnityExtensions:Vuforia:VuforiaConfiguration
   vuforia:
-    vuforiaLicenseKey: Ad54AJv/////AAABmYSHZlhX9kjsnGpijDK6oPEuxIX2Eu0/4DpGbqHZMTjZPo+K8pLnXNIba21rDg+h3XhS1uR1SZx99tRuWhfLosOdItX6Af1w+w/LWMjgYqbozryCLrtPW6AxmEsYZleew9rs8waf0a7zGF4H2r5hoZUQjxm7YCuNGAwMvW0iV8pNnPcvCOZ2Sa6fAB36+NuKhVa8pqD9EyYajebxIk9MycylmQdddFM3UjEF/Np3IXSHlVfd6ens3Y7QqUJJjjWx/EKoMcPnO37uWvpfpx8DP99GqIWwrmQw1wGC6ikop0A7QePRnyeLPP0VM4clOy9hYgDs8NWrY1K5UYPgr95j2L5tmZctFZH1L/fIHMsRX9Sn
-    ufoLicenseKey: QWJ2VUJWci8vLy8vQUFBQUtGdndIVUQrWmsxWWtnUkdNTkk1NWlReHA0UGM3K1ZjNk5NVHg2czZ6NTRJaVlkVmhKTEJuUlJjNmZTZUdPU2g5ZUtvb0wrdWNHRDhaVHh2WDh2QjZXUSs0SHBWcUk2dnhCWjBVNE0zalg4NUN4TE5ucEp5c1ZURzJOb0FxLzZDL0VRcjlkYmx6V2RyOW93TXNnQmp1TDkvNXlNSUFvWjREckNIcWxIb3RTWWtPR1JlbVhFUGdkaHBGVE8zK1Y5dFEvbEhmNnpmL000ZXR5a2RHcS9KQXU1ajVHQUFlUmd6NGR1Vkd5aTFqSzZJMHNCWU9rdFdnRHJseG1NUmM4d1dUNDFnZ0JwUTRtN2ZsRFdJcm1Kb256L2lmTnIvRmNpSGxzUktoOFd4ZVBvRUt4bDF0OVV2VlY3dUxISkpBTmRNcW5uZWNxaDZFejdrcjllR1RNT3ZKd3R2NlNZbm11a1RFclhVek1EZUFwMXk=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVYyZC9Nci8vLy8vQUFBQUtPR2dIZmx1TVVRc3FhR21JbU9GeFpVeUJkdWExU05DeUdXWkg4bE9Lb2hvaDNFdUlEekd4ZHhlNU5tMCtLYTA5emplaEU1SFJneVZvUUxTT3RHV3B5QW5kYTdqV1FJSWhCbS9IaTBQaDNCRWtRQ3pkc3JnZHF2cHowUnVGYTc3bU95RUV0cjBqdWh3K3loTFVENzdBaVJMSHVrR3U3TWRTVVpiaVVpakhwMzlFZHRaaENEU1hmOGt0dkJWbHNnVGtGWjF0ZUg5a0VaMFlESktjdFpxWDJPckNzekwvelE3RjQzZU9aYm8xUDdWdXdvWWRpZkZ6MlFHMFl4R2h6bjZBN0I4WTRYeEd6b0hqQzhzMHJ2cHpmQ3lWSjVHNzRNRVV0R3FVNU9VUXV6SFNDbXphWXlUTmJqZldicTBhVUY3OE9HM09FOUx0N3BHdTE4R0RnVko2VGpreW9sd1pYRlVoUlU2VGtrVWMwZE0=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 2
-    maxSimultaneousObjectTargets: 2
-    virtualSceneScaleFactor: 2
+    maxSimultaneousImageTargets: 1
+    maxSimultaneousObjectTargets: 1
+    virtualSceneScaleFactor: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
-    version: 0.0
-    eulaAcceptedVersions: '{"Values":["8.3","8.5","8.6","9.0","9.1"]}'
+    version: 1.0.0
+    eulaAcceptedVersions: 
     modelTargetMode: 0
   database:
     disableModelExtraction: 0
