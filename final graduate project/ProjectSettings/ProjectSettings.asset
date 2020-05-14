@@ -8,7 +8,11 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
+<<<<<<< HEAD
   defaultScreenOrientation: 0
+=======
+  defaultScreenOrientation: 4
+>>>>>>> parent of 6c75ec9... stop working project
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60

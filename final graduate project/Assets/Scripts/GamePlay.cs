@@ -24,8 +24,13 @@ public class GamePlay : MonoBehaviour
 
     /*HUD*/
     public Text PlayerTurnText;
+<<<<<<< HEAD
     public Text check;
     public HPBar localHealthbar;
+=======
+    public GameObject check;
+    public Slider localHealthbar;
+>>>>>>> parent of 6c75ec9... stop working project
     public Slider remoteHealthbar;
     public Slider localManaBar;
     public Slider remoteManaBar;
@@ -133,7 +138,7 @@ public class GamePlay : MonoBehaviour
             case GameState.AttackPhase:
                 {
                     Debug.Log("AttackPhase");
-                    OnAttackPhase();
+                    OnBattlePhase();
                     break;
                 }
             case GameState.WaitingOpponent:
@@ -170,7 +175,6 @@ public class GamePlay : MonoBehaviour
         Debug.Log("OnGameStart");
         if (NetworkClient.Instance.IsHost)
         {
-            Debug.Log("OnGameStart");
             SwitchTurn();
             gameState = GameState.TurnStarted;
         }
@@ -191,16 +195,15 @@ public class GamePlay : MonoBehaviour
         /*จ่ายคอส*/
         /*เช็คมานา*/
         gameState = GameState.AttackPhase;
-        //check.SetActive(true);
-        check.text = "summon phase";
-        //showBtn("main");
+        check.SetActive(true);
+        showBtn("main");
         /*GameFlow();*/
     }
 
-    public void OnAttackPhase()
+    public void OnBattlePhase()
     {
         gameState = GameState.EndPhase;
-        //check.SetActive(true);
+        check.SetActive(true);
         showBtn("battle");
         netCode.NotifyOtherPlayersGameStateChanged();
         GameFlow();
