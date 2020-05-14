@@ -2865,6 +2865,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!21 &1532800332
 Material:
   serializedVersion: 6
@@ -3026,6 +3027,8 @@ MonoBehaviour:
   mPreviousVirtualSceneScaleFactor: 2
 =======
 >>>>>>> parent of 20f9b8c... fixed app stop working
+=======
+>>>>>>> parent of 20f9b8c... fixed app stop working
 --- !u!1 &1596831665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,6 +3148,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596831665}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1661085092
 GameObject:
@@ -3284,6 +3288,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 20f9b8c... fixed app stop working
 =======
 >>>>>>> parent of 20f9b8c... fixed app stop working
 --- !u!1 &1679045097
