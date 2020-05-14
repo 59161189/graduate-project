@@ -100,8 +100,7 @@ public class GamePlay : MonoBehaviour
         });
 
         gameState = GameState.GameStarted;
-        //GameFlow();
-        OnGameStarted();
+        GameFlow();
     }
 
     public void GameFlow()
@@ -175,7 +174,7 @@ public class GamePlay : MonoBehaviour
             SwitchTurn();
             gameState = GameState.TurnStarted;
         }
-        //GameFlow();
+        GameFlow();
     }
 
     // เริ่มเทิร์นผู้เล่น
@@ -183,7 +182,7 @@ public class GamePlay : MonoBehaviour
     {
         netCode.NotifyOtherPlayersGameStateChanged();
         gameState = GameState.SummonPhase;
-        //GameFlow();
+        GameFlow();
     }
 
     public void OnSummonPhase()
@@ -193,8 +192,8 @@ public class GamePlay : MonoBehaviour
         /*เช็คมานา*/
         gameState = GameState.AttackPhase;
         //check.SetActive(true);
-        //check.text = "summon phase";
-        showBtn("main");
+        check.text = "summon phase";
+        //showBtn("main");
         /*GameFlow();*/
     }
 
